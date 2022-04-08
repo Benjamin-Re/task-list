@@ -1,0 +1,9 @@
+@import "./reset/";
+@import "./maps/";
+@import "./variables";
+@import "./main";
+
+.test {
+    background-color: $indigo;
+    color: $pink;
+}
