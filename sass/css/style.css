@@ -183,11 +183,11 @@ table th {
   text-transform: capitalize;
 }
 
-table th th:nth-child() {
+table th th:first-child {
   border-top-left-radius: 0.3rem;
 }
 
-table th th:nth-last-child() {
+table th th:last-child {
   border-top-right-radius: 0.3rem;
 }
 
@@ -226,5 +226,34 @@ table td:nth-child(3) .fa-2x {
 
 table td:nth-child(3) .fa-2x:hover {
   color: #bb2d3b;
+}
+
+table .fa-circle-check {
+  color: #198754;
+  margin-right: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+table .fa-circle-check:hover {
+  color: #20c997;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.dismissible {
+  opacity: 0 !important;
+  width: 0 !important;
+  padding: 0 !important;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.editable {
+  background-color: white;
+  display: inline-block;
+  padding: 0.3em;
+  border-radius: 0.3em;
+  margin-top: 0.3em;
 }
 /*# sourceMappingURL=style.css.map */

@@ -45,7 +45,7 @@ body {
 
 h1 {
   font-family: fFamily("smooch");
-  font-size: fSizes("xx-large");
+  font-size: fSizes(xx-large);
 }
 .main {
   background-color: white;
@@ -68,7 +68,7 @@ h1 {
       padding: 0.5em;
       background-color: $blue;
       min-height: 60px;
-      font-size: fSizes("medium");
+      font-size: fSizes(medium);
       border-top-right-radius: 0.3rem;
       border-bottom-right-radius: 0.3rem;
       transition: all 0.4s ease-in-out;
@@ -89,7 +89,7 @@ h1 {
     background-color: #bee5e3;
     padding: 0.5em;
     min-height: 60px;
-    font-size: fSizes("medium");
+    font-size: fSizes(medium);
     border-top-left-radius: 0.3rem;
     border-bottom-left-radius: 0.3rem;
     transition: all 0.15s ease-in-out;
@@ -115,7 +115,7 @@ h1 {
     justify-content: space-between;
     align-items: flex-start;
     & .fa-square-xmark {
-      font-size: fSizes("x-large");
+      font-size: fSizes(x-large);
       &:hover {
         color: $dark;
       }
@@ -138,13 +138,13 @@ table {
   & th {
     background-color: #2980b9;
     padding: 0.5em;
-    font-weight: fWeights("bold");
-    font-size: fSizes("x-large");
+    font-weight: fWeights(bold);
+    font-size: fSizes(x-large);
     text-transform: capitalize;
-    & th:nth-child() {
+    & th:first-child {
       border-top-left-radius: 0.3rem;
     }
-    & th:nth-last-child() {
+    & th:last-child {
       border-top-right-radius: 0.3rem;
     }
   }
@@ -176,4 +176,26 @@ table {
   & td:nth-child(3) .fa-2x:hover {
     color: $dark-red;
   }
+  & .fa-circle-check {
+    color: $green;
+    margin-right: 15px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: $teal;
+      transform: scale(1.2);
+    }
+  }
+}
+.dismissible {
+  opacity: 0 !important;
+  width: 0 !important;
+  padding: 0 !important;
+  transition: all 0.3s linear;
+}
+.editable {
+  background-color: white;
+  display: inline-block;
+  padding: 0.3em;
+  border-radius: 0.3em;
+  margin-top: 0.3em;
 }
