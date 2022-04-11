@@ -1,12 +1,33 @@
-// Declaring a map
-$font-weights: (
-  "regular": 400,
-  "medium": 500,
-  "bold": 700,
-);
+// Fonts map and breakpoints
 $font-sizes: (
   "initial": 0.785rem,
   "medium": 1.1rem,
-  "large": 1.8rem,
-  "x-large": 2.5rem,
+  "large": 1.5rem,
+  "x-large": 1.9rem,
+  "xx-large": 3.9rem,
+);
+$font-weights: (
+  "thin": 300,
+  "regular": 500,
+  "bold": 700,
+);
+$font-family: (
+  "lato": (
+    "Lato",
+    sans-serif,
+  ),
+  "fredoka": (
+    "Fredoka",
+    sans-serif,
+  ),
+  "smooch": (
+    "Smooch Sans",
+    sans-serif,
+  ),
+);
+// Adding breakpoints
+$breakpoints: (
+  "phone": 640px,
+  "tablet": 768px,
+  "desktop": 1024px,
 );
