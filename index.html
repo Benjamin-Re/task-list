@@ -13,7 +13,15 @@
   </head>
   <body>
     <div class="main">
-      <h1>Task List</h1>
+      <header>
+        <h1>Task List</h1>
+        <label for="filter">Filter</label>
+        <select name="filter" id="filter">
+         <option value="all">All</option>
+         <option value="done">Done</option>
+         <option value="open">Open</option>
+        </select>
+      </header>
       <div class="alert dismissible">
         please insert your message
         <i class="fa-solid fa-rectangle-xmark"></i>
@@ -34,7 +42,7 @@
       <div class="container">
         <table>
           <thead>
-            <tr id="0">
+            <tr>
               <th>Don't Forget To do This</th>
               <th>Edit</th>
               <th>Delete</th>
